@@ -4,7 +4,7 @@
   "description": "Varsity Poet college consulting website",
   "scripts": {
     "start": "eleventy --serve",
-    "build": "eleventy"
+    "build": "ELEVENTY_ENV=production eleventy"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0"

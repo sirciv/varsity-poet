@@ -1,9 +1,9 @@
 /* ─── TOKENS ───────────────────────────────────────────────── */
 :root {
-  --navy:  #100745;
-  --green: #3ED43B;
-  --blue:  #5AC5E5;
-  --cream: #eef4fa;
+  --navy:  #003041;
+  --gold: #ddb819;
+  --green:  #00994F;
+  --cream: #e5f4f3;
   --white: #FFFFFF;
   --gray:  #202123;
 }
@@ -87,9 +87,9 @@ nav.scrolled .nav-cta {
   font-family: 'Libre Baskerville', serif;
   font-size: 0.85rem;
   letter-spacing: 0.08em;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color: var(--navy);
-  background: var(--green);
+  background: var(--gold);
   padding: 0.55rem 1.4rem;
   border-radius: 100px;
   text-decoration: none;
@@ -165,12 +165,12 @@ nav.scrolled .nav-cta {
   font-family: 'Arvo', Georgia, serif;
   font-size: 0.9rem;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   text-decoration: none;
   padding: 0.85rem 2rem;
   border-radius: 100px;
   transition: transform 0.15s, box-shadow 0.15s;
-  box-shadow: 4px 4px 0 rgba(0,0,0,0.3);
+  box-shadow: 1px 1px 0 var(--gray);
 }
 
 .btn:hover {
@@ -179,14 +179,14 @@ nav.scrolled .nav-cta {
 }
 
 .btn-primary {
-  background: var(--green);
+  background: var(--gold);
   color: var(--navy);
 }
 
 .btn-outline {
   background: transparent;
   color: var(--white);
-  border: 2px solid var(--blue);
+  border: 2px solid var(--cream);
 }
 
 /* wave divider */
@@ -214,7 +214,7 @@ nav.scrolled .nav-cta {
   font-family: 'Libre Baskerville', serif;
   font-style: italic;
   font-size: 1rem;
-  color: var(--blue);
+  color: var(--gold);
   margin-bottom: 0.75rem;
 }
 
@@ -228,7 +228,7 @@ nav.scrolled .nav-cta {
 
 .section-title em {
   font-style: normal;
-  color: var(--green);
+  color: var(--gold);
 }
 
 .about-grid {
@@ -252,10 +252,10 @@ nav.scrolled .nav-cta {
   box-shadow: 9px 9px 0 var(--navy);
 }
 
-.about-card:nth-child(2) { border-color: var(--green); box-shadow: 6px 6px 0 var(--green); }
-.about-card:nth-child(2):hover { box-shadow: 9px 9px 0 var(--green); }
-.about-card:nth-child(3) { border-color: var(--blue); box-shadow: 6px 6px 0 var(--blue); }
-.about-card:nth-child(3):hover { box-shadow: 9px 9px 0 var(--blue); }
+.about-card:nth-child(2) { border-color: var(--gold); box-shadow: 6px 6px 0 var(--gold); }
+.about-card:nth-child(2):hover { box-shadow: 9px 9px 0 var(--gold); }
+.about-card:nth-child(3) { border-color: var(--green); box-shadow: 6px 6px 0 var(--green); }
+.about-card:nth-child(3):hover { box-shadow: 9px 9px 0 var(--green); }
 
 .about-icon {
   font-size: 2.5rem;
@@ -298,7 +298,7 @@ nav.scrolled .nav-cta {
   left: 10%;
   right: 10%;
   height: 3px;
-  background: repeating-linear-gradient(90deg, var(--green) 0, var(--green) 8px, transparent 8px, transparent 16px);
+  background: repeating-linear-gradient(90deg, var(--gold) 0, var(--gold) 8px, transparent 8px, transparent 16px);
 }
 
 .step {
@@ -369,14 +369,14 @@ nav.scrolled .nav-cta {
   gap: 1.25rem;
 }
 
-.testimonial-card.accent-green { border-color: var(--green); box-shadow: 6px 6px 0 var(--green); }
-.testimonial-card.accent-blue  { border-color: var(--blue);  box-shadow: 6px 6px 0 var(--blue); }
+.testimonial-card.accent-green { border-color: var(--gold); box-shadow: 6px 6px 0 var(--gold); }
+.testimonial-card.accent-blue  { border-color: var(--green);  box-shadow: 6px 6px 0 var(--green); }
 
 .quote-mark {
   font-family: 'Libre Baskerville', serif;
   font-style: italic;
   font-size: 3.5rem;
-  color: var(--green);
+  color: var(--gold);
   line-height: 1;
   opacity: 0.6;
 }
@@ -408,7 +408,7 @@ nav.scrolled .nav-cta {
 
 /* ─── PENNANT DIVIDER ───────────────────────────────────────── */
 .pennant-strip {
-  background: var(--green);
+  background: var(--gold);
   padding: 1rem 0;
   overflow: hidden;
   white-space: nowrap;
@@ -425,7 +425,7 @@ nav.scrolled .nav-cta {
   font-family: 'Arvo', Georgia, serif;
   font-size: 0.9rem;
   letter-spacing: 0.12em;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color: var(--navy);
 }
 
@@ -455,13 +455,13 @@ nav.scrolled .nav-cta {
   right: -60px;
   width: 320px;
   height: 320px;
-  background: var(--blue);
+  background: var(--green);
   opacity: 0.06;
   border-radius: 50%;
   pointer-events: none;
 }
 
-#contact .section-label { color: var(--blue); }
+#contact .section-label { color: var(--green); }
 #contact .section-title { color: var(--white); text-align: center; }
 
 .contact-sub {
@@ -495,7 +495,7 @@ nav.scrolled .nav-cta {
 
 .coach-card:hover {
   background: rgba(255,255,255,0.1);
-  border-color: var(--blue);
+  border-color: var(--green);
 }
 
 .coach-avatar {
@@ -513,14 +513,14 @@ nav.scrolled .nav-cta {
 
 .coach-card:first-child .coach-avatar {
   background: rgba(62,212,59,0.15);
-  border-color: var(--green);
-  color: var(--green);
+  border-color: var(--gold);
+  color: var(--gold);
 }
 
 .coach-card:last-child .coach-avatar {
   background: rgba(90,197,229,0.15);
-  border-color: var(--blue);
-  color: var(--blue);
+  border-color: var(--green);
+  color: var(--green);
 }
 
 .coach-name {
@@ -550,12 +550,12 @@ nav.scrolled .nav-cta {
 }
 
 .coach-card:first-child .coach-email {
-  background: var(--green);
+  background: var(--gold);
   color: var(--navy);
 }
 
 .coach-card:last-child .coach-email {
-  background: var(--blue);
+  background: var(--green);
   color: var(--navy);
 }
 
@@ -566,7 +566,7 @@ nav.scrolled .nav-cta {
 
 /* ─── FOOTER ────────────────────────────────────────────────── */
 footer {
-  background: #0f0938;
+  background: var(--navy);
   padding: 1.75rem 2rem;
   display: flex;
   align-items: center;

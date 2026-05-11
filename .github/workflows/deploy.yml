@@ -19,6 +19,8 @@ jobs:
           node-version: 20
       - run: npm ci
       - run: npm run build   # should run: npx @11ty/eleventy
+        env:
+          ELEVENTY_ENV: production
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site         # ← your Eleventy output folder
